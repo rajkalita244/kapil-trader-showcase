@@ -8,8 +8,8 @@ export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
     const el = ref.current;
     if (!el) return;
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) return;
+      (entries) => {
+        if (!entries[0]?.isIntersecting) return;
         observer.disconnect();
         const start = performance.now();
         const duration = 1400;
