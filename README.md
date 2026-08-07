@@ -561,15 +561,7 @@ The finished website should look like a premium personal brand worth over ₹10 
 
 Every section must be visually stunning, mobile responsive, lightning fast, SEO optimized, highly interactive, and built to maximize trust, authority, and user engagement while driving visitors to YouTube, Telegram, and Instagram.
 
-This project was built with [Lovable](https://lovable.dev).
 
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/002c4447-40bc-4329-9d07-6560a25c6635).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
