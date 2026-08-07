@@ -1,4 +1,4 @@
-import { Youtube, Send, Instagram, Twitter, Linkedin, ArrowUpRight } from "lucide-react";
+import { Youtube, Send, Instagram, MessageCircle, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal, SectionHeading } from "./Reveal";
 import { LINKS } from "./links";
@@ -25,8 +25,13 @@ const socials = [
     stat: "Followers",
     href: LINKS.instagram,
   },
-  { icon: Twitter, name: "X (Twitter)", desc: "Real-time market notes and levels.", stat: "Followers", href: "#" },
-  { icon: Linkedin, name: "LinkedIn", desc: "Professional updates and long-form insight.", stat: "Connections", href: "#" },
+  {
+    icon: MessageCircle,
+    name: "WhatsApp",
+    desc: "Direct message for queries, mentorship and collaborations.",
+    stat: "+91 86194 76606",
+    href: LINKS.whatsapp,
+  },
 ];
 
 export function SocialHub() {

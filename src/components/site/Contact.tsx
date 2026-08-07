@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { Youtube, Send, Instagram, Mail } from "lucide-react";
+import { Youtube, Send, Instagram, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -12,7 +12,7 @@ const channels = [
   { icon: Youtube, label: "YouTube", href: LINKS.youtube },
   { icon: Send, label: "Telegram", href: LINKS.telegram },
   { icon: Instagram, label: "Instagram", href: LINKS.instagram },
-  { icon: Mail, label: "Email", href: LINKS.email },
+  { icon: MessageCircle, label: "WhatsApp", href: LINKS.whatsapp },
 ];
 
 export function Contact() {

@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Play, Send, Instagram, Bitcoin, CandlestickChart, TrendingUp, Coins } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { LINKS } from "./links";
-import heroPortrait from "@/assets/kapil-hero.jpg";
+import heroPortrait from "@/assets/kapil-portrait.jpg.asset.json";
 
 const floaters = [
   { Icon: Bitcoin, label: "BTC", className: "left-[-6%] top-[14%]", delay: 0 },
@@ -70,10 +70,10 @@ export function Hero() {
           <div className="absolute inset-8 rounded-full bg-primary/15 blur-[90px]" aria-hidden />
           <div className="glass-card relative overflow-hidden p-2">
             <img
-              src={heroPortrait}
+              src={heroPortrait.url}
               alt="Kapil Varshney, professional trader and market educator"
-              width={1024}
-              height={1280}
+              width={929}
+              height={1651}
               className="w-full rounded-[calc(var(--radius)+4px)] object-cover"
             />
           </div>
