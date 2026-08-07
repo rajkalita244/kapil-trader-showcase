@@ -1,11 +1,11 @@
-import { Youtube, Send, Instagram, Mail } from "lucide-react";
+import { Youtube, Send, Instagram, MessageCircle } from "lucide-react";
 import { LINKS, NAV_ITEMS } from "./links";
 
 const socials = [
   { icon: Youtube, href: LINKS.youtube, label: "YouTube" },
   { icon: Send, href: LINKS.telegram, label: "Telegram" },
   { icon: Instagram, href: LINKS.instagram, label: "Instagram" },
-  { icon: Mail, href: LINKS.email, label: "Email" },
+  { icon: MessageCircle, href: LINKS.whatsapp, label: "WhatsApp" },
 ];
 
 export function Footer() {

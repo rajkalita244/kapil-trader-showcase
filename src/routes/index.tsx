@@ -7,7 +7,6 @@ import { YouTubeSection } from "@/components/site/YouTubeSection";
 import { LiveSessions } from "@/components/site/LiveSessions";
 import { Expertise } from "@/components/site/Expertise";
 import { Philosophy } from "@/components/site/Philosophy";
-import { Gallery } from "@/components/site/Gallery";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Faq } from "@/components/site/Faq";
 import { Contact } from "@/components/site/Contact";
@@ -73,7 +72,6 @@ function Index() {
         <LiveSessions />
         <Expertise />
         <Philosophy />
-        <Gallery />
         <Testimonials />
         <Faq />
         <Contact />

@@ -1,7 +1,7 @@
 import { Award, Radio, LineChart, Users } from "lucide-react";
 import { Reveal, SectionHeading } from "./Reveal";
 import { Counter } from "./Counter";
-import aboutPhoto from "@/assets/kapil-about.jpg";
+import aboutPhoto from "@/assets/kapil-formal.jpg.asset.json";
 
 const stats = [
   { icon: Award, value: 6, suffix: "+", label: "Years Experience" },
@@ -27,10 +27,10 @@ export function About() {
           <Reveal>
             <div className="glass-card overflow-hidden p-2">
               <img
-                src={aboutPhoto}
+                src={aboutPhoto.url}
                 alt="Kapil Varshney analysing live markets from his trading desk"
-                width={1024}
-                height={1024}
+                width={768}
+                height={1365}
                 loading="lazy"
                 className="w-full rounded-[calc(var(--radius)+4px)] object-cover"
               />
