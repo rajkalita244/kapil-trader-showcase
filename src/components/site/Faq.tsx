@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "How can I contact Kapil?",
-    a: "Use the contact form below or reach out through Telegram, Instagram or email — messages are read regularly.",
+    a: "Use the contact form below or reach out through WhatsApp, Instagram or Telegram  — messages are read regularly.",
   },
   {
     q: "How often are live sessions conducted?",

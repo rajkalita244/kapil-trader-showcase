@@ -5,7 +5,7 @@ import aboutPhoto from "@/assets/kapil-formal.jpg.asset.json";
 
 const stats = [
   { icon: Award, value: 6, suffix: "+", label: "Years Experience" },
-  { icon: Radio, value: 1000, suffix: "+", label: "Live Sessions" },
+  { icon: Radio, value: 100, suffix: "+", label: "Live Sessions" },
   { icon: LineChart, value: 365, suffix: "", label: "Days of Market Analysis" },
   { icon: Users, value: 100, suffix: "%", label: "Free Learning Community" },
 ];
@@ -27,7 +27,7 @@ export function About() {
           <Reveal>
             <div className="glass-card overflow-hidden p-2">
               <img
-                src={aboutPhoto.url}
+                src="/kapil-portrait.jpg"
                 alt="Kapil Varshney analysing live markets from his trading desk"
                 width={768}
                 height={1365}
@@ -38,22 +38,27 @@ export function About() {
           </Reveal>
 
           <Reveal delay={0.1} className="space-y-5 text-muted-foreground">
-            <p className="leading-relaxed">
-              Kapil Varshney has spent more than six years inside the financial markets — trading
-              crypto, gold and indices through every kind of volatility. What began as a personal
-              pursuit of consistency turned into a mission to teach.
-            </p>
-            <p className="leading-relaxed">
-              His approach is grounded in market structure, liquidity and institutional order flow,
-              taught in plain language. Every session pairs live chart reading with the two things
-              most traders skip: <span className="text-foreground">trading psychology</span> and{" "}
-              <span className="text-foreground">risk management</span>.
-            </p>
-            <p className="leading-relaxed">
-              Through daily live analysis and a free learning community, he helps traders replace
-              guesswork with a repeatable process — because consistency, not luck, is what compounds.
-            </p>
-          </Reveal>
+  <p className="leading-relaxed">
+    Kapil Varshney brings more than six years of experience in the financial markets, specializing
+    in crypto, gold, and indices. His journey from becoming a consistently profitable trader to
+    mentoring others is built on practical market experience and disciplined execution.
+  </p>
+
+  <p className="leading-relaxed">
+    As a <span className="text-foreground">core team member and market educator</span> at{" "}
+    <span className="text-foreground">Trader Hitesh (Hitesh Nanwani)</span>, Kapil regularly hosts
+    live trading and educational sessions on Hitesh Sir's official second YouTube channel, helping
+    traders understand real-time market structure, liquidity, and institutional order flow.
+  </p>
+
+  <p className="leading-relaxed">
+    Every session combines live chart analysis with the two foundations most traders overlook:
+    <span className="text-foreground"> trading psychology</span> and{" "}
+    <span className="text-foreground"> risk management</span>. Through free educational content and
+    daily live market discussions, Kapil aims to help traders build a disciplined, repeatable
+    trading process based on consistency—not luck.
+  </p>
+</Reveal>
         </div>
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

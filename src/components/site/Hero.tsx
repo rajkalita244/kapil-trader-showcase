@@ -70,7 +70,7 @@ export function Hero() {
           <div className="absolute inset-8 rounded-full bg-primary/15 blur-[90px]" aria-hidden />
           <div className="glass-card relative overflow-hidden p-2">
             <img
-              src={heroPortrait.url}
+              src="/kapil-formal.jpg"
               alt="Kapil Varshney, professional trader and market educator"
               width={929}
               height={1651}

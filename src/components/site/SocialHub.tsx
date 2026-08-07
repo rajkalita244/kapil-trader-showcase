@@ -8,21 +8,21 @@ const socials = [
     icon: Youtube,
     name: "YouTube",
     desc: "Daily live sessions, breakdowns and free market education.",
-    stat: "Subscribers",
+    stat: "5k+Subscribers",
     href: LINKS.youtube,
   },
   {
     icon: Send,
     name: "Telegram",
     desc: "Chart updates, session reminders and community discussion.",
-    stat: "Members",
+    stat: "10k+Members",
     href: LINKS.telegram,
   },
   {
     icon: Instagram,
     name: "Instagram",
     desc: "Behind the screens, quick lessons and trading mindset reels.",
-    stat: "Followers",
+    stat: "1k+Followers",
     href: LINKS.instagram,
   },
   {
@@ -58,7 +58,7 @@ export function SocialHub() {
                 <h3 className="mt-5 text-lg font-semibold">{s.name}</h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{s.desc}</p>
                 <p className="mt-5 text-xs tracking-[0.16em] text-muted-foreground uppercase">
-                  — {s.stat}
+                   {s.stat}
                 </p>
                 <Button variant="glass" size="pill" className="mt-4 w-full" asChild>
                   <a href={s.href} target="_blank" rel="noreferrer">

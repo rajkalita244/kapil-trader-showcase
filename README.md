@@ -141,7 +141,7 @@ Include four premium info cards:
 
 6+ Years Experience
 
-1000+ Live Sessions
+100+ Live Sessions
 
 Daily Market Analysis
 

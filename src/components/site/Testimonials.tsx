@@ -3,39 +3,39 @@ import { Reveal, SectionHeading } from "./Reveal";
 
 const reviews = [
   {
-    name: "Rohit Sharma",
+    name: "Amol K",
     role: "Swing Trader",
-    initials: "RS",
+    initials: "AK",
     text: "The way liquidity and market structure are explained finally made charts click for me. My entries are calmer and far more selective now.",
   },
   {
-    name: "Ananya Mehta",
+    name: "Raj K",
     role: "Crypto Trader",
-    initials: "AM",
+    initials: "RK",
     text: "Six months of live sessions taught me more about risk than two years of courses. The focus on process over profits is rare.",
   },
   {
-    name: "Vikram Nair",
+    name: "Avinash K",
     role: "Full-time Trader",
-    initials: "VN",
+    initials: "AK",
     text: "Daily gold analysis is incredibly consistent. No hype, no signals — just clean reasoning you can actually learn from.",
   },
   {
-    name: "Priya Desai",
+    name: "Nandini M",
     role: "Beginner Trader",
-    initials: "PD",
+    initials: "NM",
     text: "I started with zero knowledge. The free community answered every question patiently until I understood it properly.",
   },
   {
-    name: "Arjun Kapoor",
+    name: "Sudarshan P",
     role: "Part-time Trader",
-    initials: "AK",
+    initials: "SP",
     text: "The psychology segments helped me stop revenge trading. That alone changed my monthly results completely.",
   },
   {
-    name: "Sneha Iyer",
+    name: "Naman",
     role: "Student",
-    initials: "SI",
+    initials: "NB",
     text: "Live chart reading every evening is like a masterclass. Genuine, authentic and always educational.",
   },
 ];
