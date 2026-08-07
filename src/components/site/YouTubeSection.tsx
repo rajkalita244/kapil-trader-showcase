@@ -69,13 +69,14 @@ export function YouTubeSection() {
         <Reveal delay={0.05}>
           <div className="mt-12 overflow-hidden rounded-3xl border border-white/10">
 
-            <div className="relative h-36 overflow-hidden sm:h-44">
+       <div className="relative h-64 w-full overflow-hidden bg-black sm:h-72 lg:h-80">
   <img
     src="/thumbnail.jpg"
     alt="YouTube Thumbnail"
-    className="absolute inset-0 h-full w-full object-cover"
+    className="absolute inset-0 h-full w-full object-fill"
   />
-  <div className="absolute inset-0 bg-black/30" />
+
+  <div className="absolute inset-0 bg-black/15" />
 </div>
 
             <div className="grid gap-6 bg-white/[0.03] p-7 backdrop-blur-xl md:grid-cols-[1.4fr_1fr]">
