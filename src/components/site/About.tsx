@@ -39,17 +39,27 @@ export function About() {
 
           <Reveal delay={0.1} className="space-y-5 text-muted-foreground">
   <p className="leading-relaxed">
-    Kapil Varshney brings more than six years of experience in the financial markets, specializing
+    Kapil Varshney brings more than <span className="text-foreground">six years of experience</span> in the financial markets, specializing
     in crypto, gold, and indices. His journey from becoming a consistently profitable trader to
     mentoring others is built on practical market experience and disciplined execution.
   </p>
 
   <p className="leading-relaxed">
-    As a <span className="text-foreground">core team member and market educator</span> at{" "}
-    <span className="text-foreground">Trader Hitesh (Hitesh Nanwani)</span>, Kapil regularly hosts
-    live trading and educational sessions on Hitesh Sir's official second YouTube channel, helping
-    traders understand real-time market structure, liquidity, and institutional order flow.
-  </p>
+  As a{" "}
+  <span className="text-foreground">core team member and market educator</span>{" "}
+  at{" "}
+  <a
+    href="https://www.hiteshnanwani.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-neon hover:text-neon hover:underline transition-colors cursor-pointer"
+  >
+    Trader Hitesh Nanwani
+  </a>
+  , Kapil regularly hosts live trading and educational sessions on Hitesh
+  Sir's official second YouTube channel, helping traders understand real-time
+  market structure, liquidity, and institutional order flow.
+</p>
 
   <p className="leading-relaxed">
     Every session combines live chart analysis with the two foundations most traders overlook:

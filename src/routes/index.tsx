@@ -12,6 +12,7 @@ import { Faq } from "@/components/site/Faq";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { ScrollProgress, BackToTop, AmbientBackdrop } from "@/components/site/Chrome";
+import { Disclaimer } from "@/components/site/disclaimer";
 
 const TITLE = "Kapil Varshney | Professional Trader & Market Educator";
 const DESCRIPTION =
@@ -75,6 +76,7 @@ function Index() {
         <Testimonials />
         <Faq />
         <Contact />
+        <Disclaimer />
       </main>
       <Footer />
       <BackToTop />

@@ -19,7 +19,7 @@ export function Contact() {
           eyebrow="Contact"
           title={
             <>
-              Let's Talk
+              Let's <span className="text-neon">Talk</span> 
             </>
           }
           subtitle="Questions, collaborations or feedback — connect with Kapil through any of the platforms below."

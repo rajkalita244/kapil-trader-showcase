@@ -21,7 +21,7 @@ const items = [
   { icon: Activity, title: "Price Action", desc: "Clean, indicator-free chart reading built on pure candles." },
   { icon: Timer, title: "Swing Trading", desc: "Higher-timeframe setups for traders with limited screen time." },
   { icon: Bitcoin, title: "Crypto Trading", desc: "BTC, ETH and altcoin structure across volatile 24/7 markets." },
-  { icon: Coins, title: "Gold Trading", desc: "XAUUSD sessions, news impact and precision entry models." },
+  { icon: Coins, title: "Gold Trading", desc: "XAUUSDT sessions, news impact and precision entry models." },
   { icon: BarChart3, title: "Technical Analysis", desc: "Confluence-based analysis that turns charts into decisions." },
 ];
 

@@ -12,4 +12,5 @@ export const NAV_ITEMS = [
   { label: "YouTube", href: "#youtube" },
   { label: "Expertise", href: "#expertise" },
   { label: "Contact", href: "#contact" },
+  { label: "Disclaimer", href: "#disclaimer" },
 ];

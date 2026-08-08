@@ -57,7 +57,7 @@ export function Footer() {
 
         <div>
           <h3 className="text-xs tracking-[0.18em] text-muted-foreground uppercase">Legal</h3>
-          <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
+          {/* <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
             <li>
               <a href="#" className="transition-colors hover:text-primary">
                 Privacy Policy
@@ -68,7 +68,7 @@ export function Footer() {
                 Terms of Use
               </a>
             </li>
-          </ul>
+          </ul> */}
           <p className="mt-6 text-xs leading-relaxed text-muted-foreground">
             Educational content only. Not financial advice.
           </p>

@@ -62,8 +62,8 @@ export function YouTubeSection() {
 
         <SectionHeading
           eyebrow="YouTube"
-          title={<>Latest Videos</>}
-          subtitle="Automatically loaded from the official YouTube RSS feed."
+          title={<>Learn with <span className="text-neon">No Cost</span></>}
+          subtitle="Everything you need to know about the market is here."
         />
 
         <Reveal delay={0.05}>
@@ -88,8 +88,7 @@ export function YouTubeSection() {
                 </h3>
 
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Latest uploads fetched automatically using the official
-                  YouTube RSS feed.
+                  Press the bell icon to get notified for upcoming lives and learning videos.
                 </p>
 
                 <Button
@@ -129,6 +128,11 @@ export function YouTubeSection() {
             </div>
           </div>
         </Reveal>
+
+
+         <SectionHeading
+          title={<>Latest <span className="text-neon">Videos</span></>}
+        />
 
         {loading && (
           <div className="mt-12 text-center text-muted-foreground">
