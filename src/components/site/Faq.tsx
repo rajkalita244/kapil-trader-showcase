@@ -7,17 +7,23 @@ import {
 import { Reveal, SectionHeading } from "./Reveal";
 
 const faqs = [
+  {q: "How to get free courses access ?",
+   a: "Go to the free courses page & then follow the steps given there.",
+  },
+  {q: "Can I get mentorship from Kapil Varshney?",
+    a: "Yes, you will be guided by Kapil Varshney in the live sessions, and you can ask questions in the YouTube chat or through social media platforms.",
+  },
+  {
+    q: "Is the learning free?",
+    a: "Yes. All the courses, live session, video and community access is completely free. The focus is education, not selling.",
+  },
   {
     q: "How can I join the live sessions?",
     a: "Simply subscribe on YouTube and turn on notifications. Sessions go live every day at 7:00 PM IST — no registration, no fee.",
   },
   {
-    q: "Is the learning free?",
-    a: "Yes. Every live session, video and community discussion is completely free. The focus is education, not selling.",
-  },
-  {
     q: "Where can I ask questions?",
-    a: "Ask live in the YouTube chat during sessions, or join the Telegram community where questions are answered daily.",
+    a: "Ask live in the YouTube chat during sessions, or you can ask doubts by dm in any social media platform given here.",
   },
   {
     q: "How can I contact Kapil?",
@@ -31,7 +37,7 @@ const faqs = [
 
 export function Faq() {
   return (
-    <section className="section-pad">
+    <section id="faq" className="section-pad">
       <div className="mx-auto max-w-3xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="FAQ"
