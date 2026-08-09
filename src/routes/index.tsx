@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
-import { SocialHub } from "@/components/site/SocialHub";
 import { YouTubeSection } from "@/components/site/YouTubeSection";
 import { LiveSessions } from "@/components/site/LiveSessions";
 import { Expertise } from "@/components/site/Expertise";
@@ -13,6 +12,8 @@ import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { ScrollProgress, BackToTop, AmbientBackdrop } from "@/components/site/Chrome";
 import { Disclaimer } from "@/components/site/disclaimer";
+import { FreeCourse } from "@/components/site/FreeCourse";
+
 
 const TITLE = "Kapil Varshney | Professional Trader & Market Educator";
 const DESCRIPTION =
@@ -68,10 +69,10 @@ function Index() {
       <main>
         <Hero />
         <About />
-        <SocialHub />
         <YouTubeSection />
-        <LiveSessions />
-        <Expertise />
+        {/* <LiveSessions /> */}
+        {/* <Expertise /> */}
+        <FreeCourse />
         <Philosophy />
         <Testimonials />
         <Faq />

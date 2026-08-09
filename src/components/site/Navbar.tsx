@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Play } from "lucide-react";
+import { Menu, X, Play, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { LINKS, NAV_ITEMS } from "./links";
+import {Link} from "@tanstack/react-router";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -46,9 +47,9 @@ export function Navbar() {
 
         <div className="flex shrink-0 items-center gap-2">
           <Button variant="hero" size="pill" className="hidden sm:inline-flex" asChild>
-            <a href={LINKS.youtube} target="_blank" rel="noreferrer">
-              <Play /> Watch Live
-            </a>
+            <Link to="/free-course" target="_blank" rel="noreferrer">
+              <BookOpen />Get Free Course
+            </Link>
           </Button>
           <Button
             variant="glass"
@@ -76,9 +77,9 @@ export function Navbar() {
               </a>
             ))}
             <Button variant="hero" size="pill" className="mt-4" asChild>
-              <a href={LINKS.youtube} target="_blank" rel="noreferrer">
-                <Play /> Watch Live
-              </a>
+              <Link to="/free-course" target="_blank" rel="noreferrer">
+                <BookOpen />Get Free Course
+              </Link>
             </Button>
           </div>
         </div>

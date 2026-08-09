@@ -1,7 +1,8 @@
 import { motion } from "motion/react";
-import { Play, Send, Instagram, Bitcoin, CandlestickChart, TrendingUp, Coins } from "lucide-react";
+import { Play, Send, Instagram, Bitcoin, CandlestickChart, TrendingUp, Coins, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { LINKS } from "./links";
+import {Link} from "@tanstack/react-router";
 import heroPortrait from "@/assets/kapil-portrait.jpg.asset.json";
 
 const floaters = [
@@ -22,7 +23,7 @@ export function Hero() {
         >
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-4 py-1.5 text-xs tracking-[0.18em] text-primary uppercase">
             <span className="animate-pulse-glow size-1.5 rounded-full bg-primary" />
-            Live every day · 7 PM IST
+            YOUR FREE GUIDE TO THE REAL MARKET
           </span>
 
           <h1 className="mt-7 text-4xl leading-[1.05] font-semibold text-balance sm:text-5xl lg:text-6xl xl:text-7xl">
@@ -44,6 +45,11 @@ export function Hero() {
 
           <div className="mt-9 flex flex-wrap gap-3">
             <Button variant="hero" size="xl" asChild>
+              <Link to="/free-course" target="_blank" rel="noreferrer">
+                <BookOpen />Get Free Course
+              </Link>
+            </Button>
+            <Button variant="glass" size="xl" asChild>
               <a href={LINKS.youtube} target="_blank" rel="noreferrer">
                 <Play /> Watch Live
               </a>

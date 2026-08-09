@@ -24,7 +24,7 @@ const channelStats = [
   { icon: Users, label: "Subscribers", value: "5k+" },
   { icon: PlaySquare, label: "Videos", value: "100+" },
   { icon: Eye, label: "Views", value: "100k+" },
-  { icon: Bell, label: "Live", value: "Daily" },
+  { icon: Bell, label: "Live", value: "Daily 7PM-10PM" },
 ];
 
 export function YouTubeSection() {
@@ -60,10 +60,22 @@ export function YouTubeSection() {
     <section id="youtube" className="py-20">
       <div className="container mx-auto">
 
-        <SectionHeading
+                <SectionHeading
           eyebrow="YouTube"
-          title={<>Learn with <span className="text-neon">No Cost</span></>}
-          subtitle="Everything you need to know about the market is here."
+          title={
+            <>
+               Join Daily <span className="text-neon">Live Trading</span>
+            </>
+          }
+          subtitle={
+            <>
+              <span className="text-lg md:text-xl lg:text-2xl font-medium text-foreground">
+                - Learn with <span className="text-neon">No Cost</span> -
+              </span>
+              <br />
+              
+            </>
+          }
         />
 
         <Reveal delay={0.05}>
