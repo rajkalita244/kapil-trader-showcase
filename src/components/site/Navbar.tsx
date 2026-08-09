@@ -48,7 +48,7 @@ export function Navbar() {
         <div className="flex shrink-0 items-center gap-2">
           <Button variant="hero" size="pill" className="hidden sm:inline-flex" asChild>
             <Link to="/free-course" target="_blank" rel="noreferrer">
-              <BookOpen />Get Free Course
+              <BookOpen />Enroll Free Course
             </Link>
           </Button>
           <Button
@@ -78,7 +78,7 @@ export function Navbar() {
             ))}
             <Button variant="hero" size="pill" className="mt-4" asChild>
               <Link to="/free-course" target="_blank" rel="noreferrer">
-                <BookOpen />Get Free Course
+                <BookOpen />Enroll Free Course
               </Link>
             </Button>
           </div>

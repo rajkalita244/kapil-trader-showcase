@@ -15,10 +15,11 @@ import {
   BarChart3,
 } from "lucide-react";
 import { Reveal, SectionHeading } from "./Reveal";
-import {Link} from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { Button } from "../ui/button";
 
-const DELTA_LINK = "https://www.delta.exchange/?code=DAJVDO";
+const DELTA_LINK =
+  "https://www.delta.exchange/?code=DAJVDO";
 
 const WHATSAPP_LINK =
   "https://wa.me/918619476606?text=Hi%20Kapil%2C%20I%20have%20opened%20my%20Delta%20Exchange%20account%20using%20your%20link.%20Please%20share%20the%20free%20course%20access";
@@ -115,9 +116,9 @@ export function FreeCourse() {
           }
         />
 
-
-           {/* Course Access Steps */}
-        {/* <Reveal className="mx-auto mt-20 max-w-3xl text-center">
+        {/* Course Access Steps */}
+        {/*
+        <Reveal className="mx-auto mt-20 max-w-3xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-primary/5 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-primary">
             <CheckCircle2 className="size-4" />
             How to Get Access
@@ -126,7 +127,8 @@ export function FreeCourse() {
           <h3 className="mt-5 font-display text-2xl font-semibold sm:text-3xl">
             Get Started in 3 Simple Steps
           </h3>
-        </Reveal> */}
+        </Reveal>
+        */}
 
         <div className="mx-auto mt-12 max-w-5xl">
           <div className="grid gap-6 md:grid-cols-3">
@@ -163,46 +165,74 @@ export function FreeCourse() {
                   </div>
 
                   <h3 className="mt-6 font-display text-2xl font-semibold sm:text-3xl">
-                    Get Your <span className="text-neon">Free Course Access</span> 
+                    Get Your{" "}
+                    <span className="text-neon">Free Course Access</span>
                   </h3>
 
-
-                  <p className="mt-6 font-bold text-sm text-muted-foreground">
-                  A structured trading course designed to take you from the fundamentals of the market to advanced concepts, with a focus on practical chart reading and real-world trading.
+                  <p className="mt-6 text-sm font-bold text-muted-foreground">
+                    A structured trading course designed to take you from the
+                    fundamentals of the market to advanced concepts, with a
+                    focus on practical chart reading and real-world trading.
                   </p>
 
-                  {/* <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+                  {/*
+                  <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
                     Open your Delta Exchange account using the referral link,
                     then send Kapil a WhatsApp message with your registered
                     details to request access.
-                  </p> */}
+                  </p>
+                  */}
 
-                  <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-                    <Button variant="hero" size="pill" className="hidden sm:inline-flex" asChild>
-            <Link to="/free-course" target="_blank" rel="noreferrer">
-              <ExternalLink /> Click Here to Get Free Course
-            </Link>
-          </Button>
+                  {/* MOBILE RESPONSIVE BUTTONS */}
+                  <div className="mt-8 flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row">
+                    <Button
+                      variant="hero"
+                      size="xl"
+                      asChild
+                      className="w-full sm:w-auto"
+                    >
+                      <Link
+                        to="/free-course"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex w-full items-center justify-center gap-2 sm:w-auto"
+                      >
+                        <ExternalLink className="size-4 shrink-0" />
+
+                        {/* Desktop */}
+                        <span className="hidden sm:inline">
+                          Click Here to Get Free Course
+                        </span>
+
+                        {/* Mobile */}
+                        <span className="inline sm:hidden">
+                          Get Free Course
+                        </span>
+                      </Link>
+                    </Button>
 
                     <a
                       href={WHATSAPP_LINK}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-background px-6 py-3.5 text-sm font-semibold transition-all hover:bg-muted"
+                      className="inline-flex w-full min-w-0 items-center justify-center gap-2 rounded-xl border border-border bg-background px-6 py-3.5 text-sm font-semibold transition-all hover:bg-muted sm:w-auto"
                     >
-                      <MessageCircle className="size-4" />
-                      Message on WhatsApp
+                      <MessageCircle className="size-4 shrink-0" />
+
+                      <span className="text-center">
+                        Message on WhatsApp
+                      </span>
                     </a>
                   </div>
 
-                  <p className="mt-6 text-xs text-muted-foreground">
-                    
+                  <p className="mt-6 text-center text-xs text-muted-foreground">
                     <strong className="font-bold text-foreground">
                       Happy Learning and Trading!
                     </strong>
                   </p>
 
-                  {/* <p className="mt-2 text-xs text-muted-foreground">
+                  {/*
+                  <p className="mt-2 text-xs text-muted-foreground">
                     WhatsApp:{" "}
                     <a
                       href="https://wa.me/918619476606"
@@ -212,16 +242,17 @@ export function FreeCourse() {
                     >
                       +91 86194 76606
                     </a>
-                  </p> */}
+                  </p>
+                  */}
                 </div>
               </div>
             </div>
           </Reveal>
         </div>
 
-
         {/* What You'll Learn */}
-        {/* <Reveal className="mx-auto mt-10 max-w-3xl text-center">
+        {/*
+        <Reveal className="mx-auto mt-10 max-w-3xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-primary/5 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-primary">
             <BookOpen className="size-4" />
             What You'll Learn
@@ -236,10 +267,12 @@ export function FreeCourse() {
             fundamentals and progressing towards advanced price action,
             liquidity and institutional concepts.
           </p>
-        </Reveal> */}
+        </Reveal>
+        */}
 
         {/* freecourse Grid */}
-        {/* <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        {/*
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {freecourse.map((item, i) => (
             <Reveal key={item.title} delay={(i % 5) * 0.06}>
               <div className="glass-card group h-full p-6">
@@ -257,19 +290,21 @@ export function FreeCourse() {
               </div>
             </Reveal>
           ))}
-        </div> */}
+        </div>
+        */}
 
-          {/* Disclaimer */}
-          {/* <Reveal delay={0.3} className="mt-6">
-            <p className="mx-auto max-w-2xl text-center text-xs leading-relaxed text-muted-foreground">
-              <strong className="text-foreground">Important:</strong> This
-              course is provided for educational and informational purposes
-              only. Trading and investing involve risk. Please do your own
-              research and make financial decisions according to your own risk
-              tolerance and circumstances.
-            </p>
-          </Reveal> */}
-       
+        {/* Disclaimer */}
+        {/*
+        <Reveal delay={0.3} className="mt-6">
+          <p className="mx-auto max-w-2xl text-center text-xs leading-relaxed text-muted-foreground">
+            <strong className="text-foreground">Important:</strong> This
+            course is provided for educational and informational purposes
+            only. Trading and investing involve risk. Please do your own
+            research and make financial decisions according to your own risk
+            tolerance and circumstances.
+          </p>
+        </Reveal>
+        */}
       </div>
     </section>
   );

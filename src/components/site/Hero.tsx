@@ -46,7 +46,7 @@ export function Hero() {
           <div className="mt-9 flex flex-wrap gap-3">
             <Button variant="hero" size="xl" asChild>
               <Link to="/free-course" target="_blank" rel="noreferrer">
-                <BookOpen />Get Free Course
+                <BookOpen />Access Free Course
               </Link>
             </Button>
             <Button variant="glass" size="xl" asChild>
