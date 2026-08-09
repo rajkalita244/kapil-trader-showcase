@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Play, Send, Instagram, Bitcoin, CandlestickChart, TrendingUp, Coins, BookOpen } from "lucide-react";
+import { Play, Send, Instagram, Bitcoin, CandlestickChart, TrendingUp, Coins, BookOpen, GraduationCap, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { LINKS } from "./links";
 import {Link} from "@tanstack/react-router";
@@ -46,7 +46,7 @@ export function Hero() {
           <div className="mt-9 flex flex-wrap gap-3">
             <Button variant="hero" size="xl" asChild>
               <Link to="/free-course" target="_blank" rel="noreferrer">
-                <BookOpen />Access Free Course
+                <ArrowUpRight />Start Free Course
               </Link>
             </Button>
             <Button variant="glass" size="xl" asChild>
