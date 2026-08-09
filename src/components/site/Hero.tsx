@@ -32,6 +32,22 @@ export function Hero() {
             with <span className="text-neon">Confidence</span>
           </h1>
 
+
+           {/* MOBILE ONLY - image appears below the heading */}
+          <div className="mt-8 block lg:hidden">
+            <div className="glass-card relative mx-auto w-full max-w-md overflow-hidden p-2">
+              <img
+                src="/kapil-formal.jpg"
+                alt="Kapil Varshney, professional trader and market educator"
+                width={929}
+                height={1651}
+                className="w-full rounded-[calc(var(--radius)+4px)] object-cover"
+              />
+            </div>
+          </div>
+
+
+
           <p className="mt-6 font-display text-lg font-medium sm:text-xl">Kapil Varshney</p>
           <p className="mt-1 text-sm tracking-wide text-primary/90">
             Professional Trader • Market Educator • Live YouTube Mentor
@@ -67,13 +83,22 @@ export function Hero() {
           </div>
         </motion.div>
 
+        {/* DESKTOP IMAGE - unchanged / hidden on mobile */}
         <motion.div
-          className="relative mx-auto w-full max-w-md lg:max-w-none"
+          className="relative mx-auto hidden w-full max-w-md lg:block lg:max-w-none"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+          transition={{
+            duration: 1,
+            delay: 0.15,
+            ease: [0.16, 1, 0.3, 1],
+          }}
         >
-          <div className="absolute inset-8 rounded-full bg-primary/15 blur-[90px]" aria-hidden />
+          <div
+            className="absolute inset-8 rounded-full bg-primary/15 blur-[90px]"
+            aria-hidden
+          />
+
           <div className="glass-card relative overflow-hidden p-2">
             <img
               src="/kapil-formal.jpg"
@@ -89,7 +114,12 @@ export function Hero() {
               key={label}
               className={`absolute ${className} hidden sm:block`}
               animate={{ y: [0, -14, 0] }}
-              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay,
+              }}
             >
               <div className="flex items-center gap-2 rounded-2xl border border-white/10 bg-background/70 px-3.5 py-2.5 text-xs font-medium backdrop-blur-xl">
                 <Icon className="size-4 text-primary" />
