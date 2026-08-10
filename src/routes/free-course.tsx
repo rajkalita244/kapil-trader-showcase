@@ -325,146 +325,143 @@ function FreeCoursePage() {
       </section>
 
       {/* =========================================================
-          ACCESS
-      ========================================================== */}
-      <section
-        id="access"
-        className="scroll-mt-20 py-16 sm:py-24 lg:py-28"
+ACCESS
+========================================================== */}
+
+<section>
+  {/* ACCESS Steps */}
+  <div className="mx-auto max-w-3xl text-center">
+    <div className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-primary/5 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.18em] text-primary sm:text-xs">
+      <Sparkles className="size-4" />
+      Course Access
+    </div>
+
+    <h2 className="mt-5 font-display text-3xl font-bold sm:text-4xl lg:text-5xl">
+      Start Learning in{" "}
+      <span className="text-neon">
+        3 Simple Steps
+      </span>
+    </h2>
+
+    <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+      Follow these simple steps to request access to the free trading
+      course.
+    </p>
+  </div>
+
+  {/* Steps */}
+  <div className="mx-auto mt-12 grid max-w-6xl gap-4 md:grid-cols-3 md:gap-5">
+    {steps.map((step, index) => (
+      <div
+        key={step.number}
+        className="relative rounded-2xl border border-border/60 bg-card/50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:bg-card sm:p-7"
       >
-        <div className="container mx-auto px-4">
-
-          <div className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-primary/5 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.18em] text-primary sm:text-xs">
-              <Sparkles className="size-4" />
-              Course Access
-            </div>
-
-            <h2 className="mt-5 font-display text-3xl font-bold sm:text-4xl lg:text-5xl">
-              Start Learning in{" "}
-              <span className="text-neon">
-                3 Simple Steps
-              </span>
-            </h2>
-
-            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-              Follow these simple steps to request access to the free trading
-              course.
-            </p>
+        {index < steps.length - 1 && (
+          <div className="absolute right-[-20px] top-12 z-10 hidden md:block">
+            <ChevronRight className="size-5 text-primary/40" />
           </div>
+        )}
 
-          {/* Steps */}
-          <div className="mx-auto mt-12 grid max-w-6xl gap-4 md:grid-cols-3 md:gap-5">
-            {steps.map((step, index) => (
-              <div
-                key={step.number}
-                className="relative rounded-2xl border border-border/60 bg-card/50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:bg-card sm:p-7"
-              >
-                {index < steps.length - 1 && (
-                  <div className="absolute right-[-20px] top-12 z-10 hidden md:block">
-                    <ChevronRight className="size-5 text-primary/40" />
-                  </div>
-                )}
+        <div className="flex items-center justify-between">
+          <span className="font-display text-sm font-bold tracking-widest text-primary">
+            {step.number}
+          </span>
 
-                <div className="flex items-center justify-between">
-                  <span className="font-display text-sm font-bold tracking-widest text-primary">
-                    {step.number}
-                  </span>
-
-                  <div className="grid size-10 place-items-center rounded-xl bg-primary/10 text-primary">
-                    <CheckCircle2 className="size-5" />
-                  </div>
-                </div>
-
-                <h3 className="mt-6 font-display text-lg font-bold sm:text-xl">
-                  {step.title}
-                </h3>
-
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  {step.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* Main Access CTA */}
-          <div className="mx-auto mt-8 max-w-5xl">
-            <div className="relative overflow-hidden rounded-3xl border border-primary/20 bg-primary/[0.04] p-1">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.08] via-transparent to-primary/[0.03]" />
-
-              <div className="relative rounded-[calc(1.5rem-4px)] border border-border/40 bg-background/90 p-6 backdrop-blur-xl sm:p-10 lg:p-12">
-
-                <div className="mx-auto max-w-3xl text-center">
-
-                  <div className="mx-auto grid size-14 place-items-center rounded-2xl border border-primary/20 bg-primary/10 sm:size-16">
-                    <GraduationCap className="size-7 text-primary sm:size-8" />
-                  </div>
-
-                  <p className="mt-5 text-[10px] font-bold uppercase tracking-[0.2em] text-primary sm:text-xs">
-                    Your First Step Starts Here
-                  </p>
-
-                  <h3 className="mt-3 font-display text-2xl font-bold sm:text-3xl lg:text-4xl">
-                    Get Your{" "}
-                    <span className="text-neon">
-                      Free Course Access
-                    </span>
-                  </h3>
-
-                  <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
-                    Open your Delta Exchange account using the referral link,
-                    then contact Kapil on WhatsApp to request your course
-                    access.
-                  </p>
-
-                  {/* CTA buttons */}
-                  <div className="mt-7 grid gap-3 sm:flex sm:justify-center">
-                    <a
-                      href={DELTA_LINK}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-bold text-primary-foreground transition-all hover:scale-[1.02] hover:opacity-90"
-                    >
-                      Open Delta Exchange
-                      <ExternalLink className="size-4" />
-                    </a>
-
-                    <a
-                      href={WHATSAPP_LINK}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-border bg-background px-6 py-3.5 text-sm font-bold transition-all hover:bg-muted"
-                    >
-                      <MessageCircle className="size-4" />
-                      Message on WhatsApp
-                    </a>
-                  </div>
-
-                  {/* Referral info */}
-                  <div className="mt-6 flex flex-col items-center justify-center gap-2 text-xs text-muted-foreground sm:flex-row sm:gap-5">
-                    <span>
-                      Referral Code:{" "}
-                      <strong className="text-foreground">
-                        DAJVDO
-                      </strong>
-                    </span>
-
-                    <span className="hidden h-3 w-px bg-border sm:block" />
-
-                    <a
-                      href={WHATSAPP_NUMBER}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline underline-offset-4 transition-colors hover:text-primary"
-                    >
-                      WhatsApp: +91 86194 76606
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="grid size-10 place-items-center rounded-xl bg-primary/10 text-primary">
+            <CheckCircle2 className="size-5" />
           </div>
         </div>
-      </section>
+
+        <h3 className="mt-6 font-display text-lg font-bold sm:text-xl">
+          {step.title}
+        </h3>
+
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          {step.desc}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
+
+
+ {/* Main Access CTA */}
+<section id="access">
+  <div className="mx-auto mt-8 max-w-5xl">
+    <div className="relative overflow-hidden rounded-3xl border border-primary/20 bg-primary/[0.04] p-1">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.08] via-transparent to-primary/[0.03]" />
+
+      <div className="relative rounded-[calc(1.5rem-4px)] border border-border/40 bg-background/90 p-6 backdrop-blur-xl sm:p-10 lg:p-12">
+        <div className="mx-auto max-w-3xl text-center">
+          <div className="mx-auto grid size-14 place-items-center rounded-2xl border border-primary/20 bg-primary/10 sm:size-16">
+            <GraduationCap className="size-7 text-primary sm:size-8" />
+          </div>
+
+          <p className="mt-5 text-[10px] font-bold uppercase tracking-[0.2em] text-primary sm:text-xs">
+            Your First Step Starts Here
+          </p>
+
+          <h3 className="mt-3 font-display text-2xl font-bold sm:text-3xl lg:text-4xl">
+            Get Your{" "}
+            <span className="text-neon">
+              Free Course Access
+            </span>
+          </h3>
+
+          <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground">
+            Open your Delta Exchange account using the referral link,
+            then contact Kapil on WhatsApp to request your course
+            access.
+          </p>
+
+          {/* CTA buttons */}
+          <div className="mt-7 grid gap-3 sm:flex sm:justify-center">
+            <a
+              href={DELTA_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-bold text-primary-foreground transition-all hover:scale-[1.02] hover:opacity-90"
+            >
+              Open Delta Exchange
+              <ExternalLink className="size-4" />
+            </a>
+
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-border bg-background px-6 py-3.5 text-sm font-bold transition-all hover:bg-muted"
+            >
+              <MessageCircle className="size-4" />
+              Message on WhatsApp
+            </a>
+          </div>
+
+          {/* Referral info */}
+          <div className="mt-6 flex flex-col items-center justify-center gap-2 text-xs text-muted-foreground sm:flex-row sm:gap-5">
+            <span>
+              Referral Code:{" "}
+              <strong className="text-foreground">
+                DAJVDO
+              </strong>
+            </span>
+
+            <span className="hidden h-3 w-px bg-border sm:block" />
+
+            <a
+              href={WHATSAPP_NUMBER}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4 transition-colors hover:text-primary"
+            >
+              WhatsApp: +91 86194 76606
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* =========================================================
           LEARNING ROADMAP
